@@ -1,13 +1,12 @@
 python
-# bot.py
-
 import os
 from io import BytesIO
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from PIL import Image, ImageDraw, ImageFont
 
 # Initialize the Telegram Bot
-updater = Updater(token=os.environ.get(6865639441:AAFDxQbJdXalp5i9FxMQBtsdkg3vqA1Cfpc), use_context=True)
+token = os.environ.get("TELEGRAM_BOT_TOKEN")  # Fetch the token from an environment variable
+updater = Updater(token, use_context=True)
 dispatcher = updater.dispatcher
 
 # Define a command handler for the text-to-image conversion
@@ -23,9 +22,9 @@ def text_to_image(update, context):
 # Helper function to create an image from text
 def create_image(text):
     font = ImageFont.truetype("arial.ttf", 25)
-    image = Image.new('RGB', (400, 100), color = (73, 109, 137))
+    image = Image.new('RGB', (400, 100), color=(73, 109, 137))
     draw = ImageDraw.Draw(image)
-    draw.text((10, 10), text, fill=(255,255,0), font=font)
+    draw.text((10, 10), text, fill=(255, 255, 0), font=font)
     return image
 
 # Define a message handler for processing all messages
