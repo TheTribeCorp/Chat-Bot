@@ -1,4 +1,4 @@
-```python
+python
 # bot.py
 
 import os
@@ -41,4 +41,3 @@ dispatcher.add_handler(echo_handler)
 # Start the Bot
 updater.start_polling()
 updater.idle()
-```
