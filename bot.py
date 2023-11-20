@@ -5,7 +5,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from PIL import Image, ImageDraw, ImageFont
 
 # Initialize the Telegram Bot
-token = os.environ.get("TELEGRAM_BOT_TOKEN")  # Fetch the token from an environment variable
+token = os.environ.get(6865639441:AAFDxQbJdXalp5i9FxMQBtsdkg3vqA1Cfpc)  # Fetch the token from an environment variable
 updater = Updater(token, use_context=True)
 dispatcher = updater.dispatcher
 
