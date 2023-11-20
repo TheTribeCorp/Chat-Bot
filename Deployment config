@@ -1,0 +1,11 @@
+yaml
+# render.yaml
+
+services:
+  - name: telegram-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: 6865639441:AAFDxQbJdXalp5i9FxMQBtsdkg3vqA1Cfpc
+        from: secrets
