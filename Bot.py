@@ -7,7 +7,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from PIL import Image, ImageDraw, ImageFont
 
 # Initialize the Telegram Bot
-updater = Updater(token=os.environ.get("TELEGRAM_API_TOKEN"), use_context=True)
+updater = Updater(token=os.environ.get(6865639441:AAFDxQbJdXalp5i9FxMQBtsdkg3vqA1Cfpc), use_context=True)
 dispatcher = updater.dispatcher
 
 # Define a command handler for the text-to-image conversion
